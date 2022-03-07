@@ -52,7 +52,10 @@ nav ul{
         border-radius: 5px;
         padding: 5px;
     }
-    
+/*main*/
+main{
+min-height: calc(100vh - 100px - 300px);
+    }
 /*main index*/
 .container{
     display: flex;
@@ -125,32 +128,147 @@ h2{
 
 
 /*Footer*/
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-    padding: 50px;
-    grid-template-rows: repeat(2,1fr);
-}
-.item{
-    font-size: 30px;
+
+.footer_flex{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
     font-weight: 400;
-    text-align: center;
+    font-size: 17px;
 }
-.subitem{
-    text-decoration: none;
-    margin: 5px;
+.N-P{
+    font-weight: 600;
+    font-family:sans-serif ;
+    font-style: italic;
+    justify-content:center ;
+    padding: 10px;
+    letter-spacing: 5px;
+    margin: 0 0 0 70px;
+}
+.formulario{
+    padding: 10px;
+    margin: 0 0 50px 0;
+
+}
+.redes_flex{
+    display: flex;
+    align-items: center ;
+    padding: 10px;
+    margin: 0 0 0 90px;
+}
+.logo{
+    max-width: 40px;
+    padding: 5px;
+    margin: 1 px 3px 3px 10px;
+}
+.btn_e{
+border-radius: 10px ;
+padding: 10px;
+margin: 20px 0 0 120px;
+    background-color: #8C55D4;
+    color: white;
+}
+.qsfooter{
+    text-decoration: none ;
+    padding: 5px;
+    margin: 10px 0 20px 60px;
+    font-size: 20px;
+    font-weight: 400;
+    background-color:#C9B0F5 ;
+    color: black;
+}
+.copy{
+    font-weight: 400;
+    color: black;
+    align-self: center;
+    margin: 0 0 0 80px;
+}
+.onda{
+    background-image: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    justify-content: end;
+    align-items:flex-end ;
+    height: 100%;
+    margin: 0;
+    background-position-y: bottom;
+}
+
+/*Main QS*/
+.qsflex1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 100px 200px 0 300px;
+    flex-grow: 1;
+}
+.qsflex2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    justify-content:right ;
+    flex-grow: 1;
+    padding: 5px;
+    margin: 0 0 100px 300px;
+}
+.pqs{
+    max-width: 50%;
     
 }
-.redes{
+.imgqs{
+    max-width: 80%;
+}
+h3{
+    letter-spacing: 3px;
+    padding: 5px;
+}
+.h1qs{
+    text-align: center;
+    letter-spacing: 6px;
+    font-family: serif;
+    margin: 50px 0 0 0;
+    background:linear-gradient(to bottom, #C9B0F5, white) ;
+}
+
+/*main tienda*/
+.flexcat{
     display: flex;
-    align-items:baseline ;
-    justify-content:center ;
-
+    max-width: 100%;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 30px 0 30px 0;
 }
-img{
-    display: inline-block;
-    max-width: 40px;
-    max-width: 40px;
-    margin: auto;
+.categoria{
+    border-style:outset ;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.imgprod{
+    max-width: 300px;
+}
+.btnprod{
+    border: solid 3px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #8C55D4 ;
+    background-color: white;
+    font-weight: 600;
+}
+.btnprod:hover{
+    background-color: #E4B8FF;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
