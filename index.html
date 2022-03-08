@@ -9,7 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,400;0,800;1,400&display=swap" rel="stylesheet">
 <!--fav icon-->
     <link rel="shortcurt icon" href="images/bubitasLogo.png">
-    <title>Bubitas</title>
+    
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+<title>Bubitas</title>
+
 </head>
 <body>  
  <!--header-->
@@ -21,82 +27,91 @@
             <div>
                 <div class="marca"><h1>BUBITAS</h1></div>
                 <div>
-                    <nav >
-                        <ul>
-                         <li><a href="index.html">Inicio</a></li>
-                         <li><a href="pages/tienda.html">Productos</a>
-                              <ul>
-                                <li><a href="pages/amigurumis.html">Amigurumis</a></li>
-                                <li><a href="pages/pantalones.html">Pantalones</a></li>
-                                <li><a href="pages/camisas.html">Camisas</a></li>
-                              </ul>
-                         </li>
-                         <li><a href="pages/quienessomos.html">¿Quiénes somos?</a></li>
-                        </ul>
-                       </nav>
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">BUBITAS</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="pages/quienessomos.html">¿QUIENES SOMOS?</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="pages/tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  TIENDA
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="pages/amigurumis.html">AMIGURUMIS</a></li>
+                                  <li><a class="dropdown-item" href="pages/camisas.html">CAMISAS</a></li>
+                                  <li><a class="dropdown-item" href="pages/pantalones.html">PANTALONES</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <form class="d-flex">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-secondary" type="submit">BUSCAR</button>
+                            </form>
+                          </div>
+                        </div>
+                      </nav>
                 </div>
             </div>
         </div>
     </header>
  <!--main-->
     <main>
-        <div class="container">
-            <div class="wrap">
-                <div class="box">
-                    <div>
-                        <span>Nuestro propósito</span>
-                        <h2>Potenciar la libre expresión</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere consequuntur vero sequi beatae ea, provident corrupti veniam eligendi quibusdam obcaecati iste dignissimos ipsum dolores perferendis. Accusamus excepturi aspernatur dolorum.</p>
-                    </div>
+        <div class="card bg-white text-black">
+            <img src="images/banner.webp" class="card-img" alt="nuestro propósito">
+            <div class="card-img-overlay box text-star col-lg-6">
+                <span class="card-title">Nuestro propósito</span>
+                <h2 class="card-text">Potenciar la libre expresión</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ex ut eum commodi aperiam error sunt id dolorum animi iusto. Fugiat commodi, iusto voluptatibus porro unde veniam laudantium corporis quam.</p>
                     <div class="botones">
-                        <a href="pages/quienessomos.html" class="btn1">Conocenos</a>
-                        <a href="pages/tienda.html" class="btn2">Tienda</a>
-
+                      <a href="pages/quienessomos.html" class="btn1">Conocenos</a>
+                      <a href="pages/tienda.html" class="btn2">Tienda</a>
                     </div>
-                </div>
-
             </div>
         </div>
 
     </main>
 <!--footer-->
     <footer class="onda">
-        <div class="footer_flex">
-            <div>
+        <div class="flex-column d-flex justify-content-center align-items-center">
+            <div class="container-footer col-lg-6">
                 <div class="N-P">
                     <h3>NEWSLETTER</h3>
                 </div>
-                <div>
-                    <form action="newsletter" class="formulario">
-                        <label for="nombre_apellido">Nombre y Apellido</label>
-                        <input type="text">
-                        <br>
-                        <label for="correo_electronico">Correo electrónico</label>
-                        <input type="email" name="correo_electronico" id="">
-                        <br>
-                        <input type="submit" class="btn_e">
-                    </form>
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input type="text" aria-label="Nombre" class="form-control">
+                    <input type="text" aria-label="Apellido" class="form-control">
                 </div>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Correo Electrónico</span>
+                    <input type="email" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <div class="btn btn-secondary btn_e">Enviar</div>
             </div>
-            <div  >
-                <div>
-                    <div >
-                        <a href="pages/quienessomos.html" class="qsfooter" >¿Quienes somos?</a>
-                    </div>
-                    <div class="redes_flex">
-                        <a href="https://instagram.com/bubitas.indumentaria.infantil" ><img src="images/instagram-logo.png" alt="" class="logo"></a>
-                        <a href="https://wa.me/543815451673" ><img src="images/whatsapp.png" alt="" class="logo"></a>
-                    </div>
-                    <div class="copy">
-                        &copy; 2022 por lzr
-                    </div>
-
-                </div>        
-                
+            <div>
+                <a href="pages/quienessomos.html" class="qsfooter" >¿Quienes somos?</a>
             </div>
-            
-            
+            <div class="redes_flex">
+                <a href="https://instagram.com/bubitas.indumentaria.infantil" ><img src="images/instagram-logo.png" alt="" class="logo"></a>
+                <a href="https://wa.me/543815451673" ><img src="images/whatsapp.png" alt="" class="logo"></a>
+            </div>
+            <div class="copy">
+                &copy; 2022 por lzr
+            </div>
         </div>
+        
     </footer>
+    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
