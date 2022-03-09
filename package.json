@@ -1,0 +1,23 @@
+{
+  "name": "2daentrega-roldan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucianazr/proyecto-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucianazr/proyecto-final/issues"
+  },
+  "homepage": "https://github.com/lucianazr/proyecto-final#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
