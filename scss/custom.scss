@@ -7,7 +7,7 @@ $font-family: 'Cabin', sans-serif;
 $celeste: #C9B0F5;
 $morado: #8C55D4;
 
-$full-width: 960px;
+$full-width: 100vw;
 
 //variables de bootstrap
 
@@ -18,44 +18,47 @@ $secondary: $morado;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 //scss personalizado
-
-.navbar-light{
-    background-color: #C9B0F5;
+header{
+    .navbar-light{
+        background-color: #C9B0F5;
+    }
+    .navbar{
+        margin: 0;
+        ul{
+            li:hover {
+                ul{
+                display: block;
+                background-color: #C9B0F5;
+            
+            a:hover, a:focus{
+                color: white;
+                background-color: #C46AEB;       
+    } } } } }
+    .marca{
+        text-align: center;
+        color: #8C55D4 ;
+    }
+    .promo{
+        background-color: #8C55D4;
+        color: white;
+        text-align: center;
+        font-weight: 400;
+    }
 }
-.navbar{
-    ul{
-        li:hover {
-            ul{
-            display: block;
-            background-color: #C9B0F5;
-        
-        a:hover, a:focus{
-            color: white;
-            background-color: #C46AEB;       
-} } } } }
-.marca{
-    text-align: center;
-    color: #8C55D4 ;
-}
-.promo{
-    background-color: #8C55D4;
-    color: white;
-    text-align: center;
-    font-weight: 400;
-}
-.card-img{
+.mainindex{
+    .card-img{
         max-width: 100%;
         height: 70vh;
         object-fit: cover; 
         object-position: top;
-}
-span{
+    }
+    span{
     font-size: 20px;
     letter-spacing: 3px;
     background-color:#8C55D4 ;
 
-}
-h2{
+    }
+     h2{
     font-size: 25px;
     line-height: 1.2 ;
     padding-bottom: 10px;
@@ -94,56 +97,9 @@ h2{
 .btn2:hover{
     background-color: rgba( 255, 255, 255, 0.3);
 }
-.container-footer{
-    align-items: center;
-    justify-content: center;
 }
-.N-P{
-    font-weight: 600;
-    font-family:sans-serif ;
-    font-style: italic;
-    justify-content:center ;
-    text-align: center;
-    padding: 10px;
-    letter-spacing: 5px;
-    margin: 0 0 0 70px;
-}
-.redes_flex{
-    display: flex;
-    align-items: center ;
-    padding: 10px;
-    margin: 0 0 0 90px;
-}
-.logo{
-    max-width: 40px;
-    padding: 5px;
-    margin: 1 px 3px 3px 10px;
-}
-.btn_e{
-border-radius: 10px ;
-padding: 10px;
-margin: 20px 0 60px 360px;
-    background-color: #8C55D4;
-    color: white;
-    justify-content: center ;
-}
-.qsfooter{
-    text-decoration: none ;
-    padding: 5px;
-    margin: 10px 0 20px 60px;
-    font-size: 20px;
-    font-weight: 400;
-    background-color:#C9B0F5 ;
-    color: black;
-}
-.copy{
-    font-weight: 400;
-    color: black;
-    align-self: center;
-    margin: 0 0 0 80px;
-}
-.onda{
-    background-image: url(../images/wave.svg);
+footer{
+    background-image: url(../images/wave2.svg);
     background-repeat: no-repeat;
     position: relative;
     justify-content: end;
@@ -151,12 +107,65 @@ margin: 20px 0 60px 360px;
     height: 100%;
     margin: 0;
     background-position-y: bottom;
+    background-size: cover ;
+        
+    .container-footer{
+        align-items: center;
+        justify-content: center;
+    }
+    .N-P{
+        font-weight: 600;
+        font-family:sans-serif ;
+        font-style: italic;
+        justify-content:center ;
+        text-align: center;
+        padding: 10px;
+        letter-spacing: 5px;
+        margin: 0 0 0 70px;
+    }
+    .redes_flex{
+        display: flex;
+        align-items: center ;
+        padding: 10px;
+        margin: 0 0 0 ;
+    }
+    .logo{
+        max-width: 40px;
+        padding: 5px;
+        margin: 1 px 3px 3px 10px;
+    }
+    .btn_e{
+    border-radius: 10px ;
+    padding: 10px;
+    margin: 20px 0 60px 50px;
+        background-color: #8C55D4;
+        color: white;
+        justify-content: center ;
+    }
+    .qsfooter{
+        text-decoration: none ;
+        padding: 5px;
+        margin: 10px 0 20px 0;
+        font-size: 20px;
+        font-weight: 400;
+        background-color:#C9B0F5 ;
+        color: black;
+    }
+    .copy{
+        font-weight: 400;
+        color: black;
+        align-self: center;
+        margin: 0 0 0 0;
+    }
+    
 }
+
 .pqs{
     max-width: 70%;
 }
 .imgqs{
-    max-width: 100%;
+    max-width: 50vw;
+    margin: 0;
 }
 h3{
     letter-spacing: 3px;
@@ -168,9 +177,11 @@ h3{
     letter-spacing: 6px;
     font-family: serif;
     margin: 50px 0 0 0;
-    width: ($full-width/2);
+    width: ($full-width)-40vw;
 }
 .row{
     align-items: center;
 }
-
+.input-group{
+    max-width: 80vw;
+}
