@@ -11165,7 +11165,7 @@ header .promo {
   margin-top: 30px;
   flex-flow: row-reverse;
 }
-.mainindex .btn1 {
+.mainindex .btn1, .mainindex .btn2 {
   flex-basis: 30%;
   border: solid 3px;
   border-radius: 20px;
@@ -11173,23 +11173,16 @@ header .promo {
   margin: 20px;
   text-align: center;
   text-decoration: none;
-  color: #6D16D9;
   font-weight: 600;
+  background-color: #8C55D4;
+  color: white;
 }
-.mainindex .btn1:hover {
+.mainindex .btn1:hover, .mainindex .btn2:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .mainindex .btn2 {
-  flex-basis: 30%;
-  border: solid 3px;
-  border-radius: 20px;
-  padding: 10px 30px 10px 30px;
-  margin: 20px;
-  text-align: center;
-  text-decoration: none;
   color: #8C55D4;
   background-color: #C9B0F5;
-  font-weight: 600;
 }
 .mainindex .btn2:hover {
   background-color: rgba(255, 255, 255, 0.3);

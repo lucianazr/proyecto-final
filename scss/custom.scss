@@ -7,7 +7,12 @@ $font-family: 'Cabin', sans-serif;
 $celeste: #C9B0F5;
 $morado: #8C55D4;
 
+//Operaciones//
 $full-width: 100vw;
+@mixin boton-morado{
+    background-color: #8C55D4;
+    color: white; 
+}
 
 //variables de bootstrap
 
@@ -76,23 +81,17 @@ header{
     margin: 20px;
     text-align: center;
     text-decoration: none;
-    color: #6D16D9;
     font-weight: 600;
+    @include boton-morado;
 }
 .btn1:hover{
     background-color: rgba(255, 255, 255, 0.3);
 }
 .btn2{
-    flex-basis: 30%;
-    border: solid 3px;
-    border-radius: 20px;
-    padding: 10px 30px 10px 30px;
-    margin: 20px;
-    text-align: center;
-    text-decoration: none;
+    @extend .btn1;
     color: #8C55D4;
     background-color: #C9B0F5;
-    font-weight: 600;
+    
 }
 .btn2:hover{
     background-color: rgba( 255, 255, 255, 0.3);
@@ -138,8 +137,7 @@ footer{
     border-radius: 10px ;
     padding: 10px;
     margin: 20px 0 60px 50px;
-        background-color: #8C55D4;
-        color: white;
+        @include boton-morado;
         justify-content: center ;
     }
     .qsfooter{
