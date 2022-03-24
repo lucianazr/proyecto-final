@@ -11154,18 +11154,33 @@ header .promo {
   font-size: 20px;
   letter-spacing: 3px;
   background-color: #8C55D4;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
-.mainindex h2, .mainindex .h2 {
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+h2, .h2 {
   font-size: 25px;
   line-height: 1.2;
   padding-bottom: 10px;
 }
-.mainindex .botones {
+
+.botones {
   display: flex;
   margin-top: 30px;
   flex-flow: row-reverse;
 }
-.mainindex .btn1, .mainindex .btn2 {
+
+.btn1, .btn2 {
   flex-basis: 30%;
   border: solid 3px;
   border-radius: 20px;
@@ -11177,14 +11192,17 @@ header .promo {
   background-color: #8C55D4;
   color: white;
 }
-.mainindex .btn1:hover, .mainindex .btn2:hover {
+
+.btn1:hover, .btn2:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.mainindex .btn2 {
+
+.btn2 {
   color: #8C55D4;
   background-color: #C9B0F5;
 }
-.mainindex .btn2:hover {
+
+.btn2:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -11249,11 +11267,10 @@ footer .copy {
 }
 
 .pqs {
-  max-width: 70%;
+  max-width: 70vw;
 }
 
 .imgqs {
-  max-width: 50vw;
   margin: 0;
 }
 
@@ -11267,7 +11284,7 @@ h3, .h3 {
   letter-spacing: 6px;
   font-family: serif;
   margin: 50px 0 0 0;
-  width: 60vw;
+  width: 80vw;
 }
 
 .row {

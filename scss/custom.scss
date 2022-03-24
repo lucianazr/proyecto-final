@@ -23,6 +23,9 @@ $secondary: $morado;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 //scss personalizado
+
+//header
+
 header{
     .navbar-light{
         background-color: #C9B0F5;
@@ -50,6 +53,9 @@ header{
         font-weight: 400;
     }
 }
+
+//main inicio
+
 .mainindex{
     .card-img{
         max-width: 100%;
@@ -60,7 +66,23 @@ header{
     span{
     font-size: 20px;
     letter-spacing: 3px;
-    background-color:#8C55D4 ;
+    background-color:#8C55D4 ;  
+    //animacion  
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
 
     }
      h2{
@@ -96,7 +118,10 @@ header{
 .btn2:hover{
     background-color: rgba( 255, 255, 255, 0.3);
 }
-}
+
+
+//footer
+
 footer{
     background-image: url(../images/wave2.svg);
     background-repeat: no-repeat;
@@ -159,10 +184,9 @@ footer{
 }
 
 .pqs{
-    max-width: 70%;
+    max-width: 70vw;
 }
 .imgqs{
-    max-width: 50vw;
     margin: 0;
 }
 h3{
@@ -175,7 +199,7 @@ h3{
     letter-spacing: 6px;
     font-family: serif;
     margin: 50px 0 0 0;
-    width: ($full-width)-40vw;
+    width: ($full-width)-20vw;
 }
 .row{
     align-items: center;
